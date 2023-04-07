@@ -1,14 +1,19 @@
 import React from 'react';
-import Home from './components/Home';
+import PortfolioContainer from './components/PortfolioContainer';
+import NavBar from './components/NavBar';
+import Home from './components/pages/Home';
+import Stars from './components/Stars';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <>
+      <div className="body">
+        <NavBar />
         <Home />
-      </header>
-    </div>
+        <Stars />
+      </div>
+    </>
   );
 }
 
