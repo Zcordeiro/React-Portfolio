@@ -1,8 +1,8 @@
 import React from 'react';
 
 import NavBar from './components/NavBar';
-import Home from './components/pages/Home';
-import Projects from './components/pages/Projects';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
 import Stars from './components/Stars';
 import './App.css';
 

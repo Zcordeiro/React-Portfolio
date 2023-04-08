@@ -1,6 +1,6 @@
 import React from "react";
-import AstroMusic from "../../images/screenshot-astromusic.png";
-import StudyTimer from "../../images/screenshot-timer.png";
+import AstroMusic from "../images/screenshot-astromusic.png";
+import StudyTimer from "../images/screenshot-timer.png";
 
 export default function Projects() {
     return (
