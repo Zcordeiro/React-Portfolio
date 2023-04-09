@@ -7,7 +7,7 @@ export default function About() {
       <div className="flex justify-center items-center">
         <div className="m-6 p-1 md:w-1/2 text-white rounded-3xl md:text-center sm:text-left">
           <div className="flex items-center justify-center">
-            <div className="text-2xl md:text-3xl sm:leading-5 md:leading-9">
+            <div className="mt-20 text-2xl md:text-3xl sm:leading-5 md:leading-9">
               <p class="text-blue-50">
                 About Me{" "}
               </p>

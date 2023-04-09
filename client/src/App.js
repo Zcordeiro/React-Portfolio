@@ -1,8 +1,5 @@
 import React from 'react';
-import NavBar from './components/NavBar';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import FeaturedProjects from './components/FeaturedProjects';
+import DisplayPage from './pages/DisplayPage';
 import Stars from './components/Stars';
 import Footer from './components/Footer';
 import * as te from 'tw-elements';
@@ -12,8 +9,7 @@ function App() {
   return (
     <>
       <div className="body">
-        <Home />
-        <FeaturedProjects />
+        <DisplayPage />
         <Stars />
         <Footer />
       </div>

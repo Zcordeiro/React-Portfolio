@@ -1,59 +1,16 @@
 import React from "react";
-import AstroMusic from "../images/screenshot-astromusic.png";
-import StudyTimer from "../images/screenshot-timer.png";
+import FeaturedProject from "../components/FeaturedProjects";
+import OtherProjects from "../components/OtherProjects";
+
 
 export default function Projects() {
     return (
         <>
+           
             <section class="sm:flex sm:flex-col md:flex md:flex-row justify-center ">
-                <div className="m-5 text-white">
-
-                    <h1 className="headingTitle text-4xl italic border border-dashed p-4 hover:bg-slate-300/20 hover:cursor-pointer text-center">
-                        Featured
-                        Projects</h1>
-                    <div className="fprojectContainer text-center flex flex-wrap items-center justify-evenly">
-
-                        <div className="fprojectBoxes" id="project1">
-                            <img className="m-2 md:h-52 md:w-72 p-4" src={AstroMusic}
-                                alt="screenshot of project"></img>
-                            <p className="fadeInBox">
-                                <button id="featuredProject1" data-te-toggle="modal"
-                                    data-te-target="#exampleModalCenteredScrollable" data-te-ripple-init
-                                    data-te-ripple-color="light" type="button"
-                                    className="fadeInBoxText blogText text-white bg-slate-900">
-                                    Learn More!
-                                </button>
-                            </p>
-                            <div className="text-white text-xl">
-                                <p>AstroMusic
-                                    <br></br>
-                                    <a href="https://github.com/Astro-Div/Astro-Music" target="_blank">[Github
-                                        REPO]</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="fprojectBoxes" id="project2">
-                            <img className="m-2 md:h-52 md:w-72 p-4" src={StudyTimer}
-                                alt="screenshot of project"></img>
-                            <p className="fadeInBox">
-                                <button id="featuredProject2" data-te-toggle="modal"
-                                    data-te-target="#exampleModalCenteredScrollable" data-te-ripple-init
-                                    data-te-ripple-color="light" type="button"
-                                    className="fadeInBoxText blogText text-white bg-slate-900">
-                                    Learn More!
-                                </button>
-                            </p>
-                            <div className="text-white text-xl">
-                                <p>Pomodoro Study Timer
-                                    <br></br>
-                                    <a href="https://github.com/Zcordeiro/Study-Timer" target="_blank">[Github
-                                        REPO]</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <FeaturedProject />
+            <OtherProjects />
+                {/* This this the modal that describes the projects */}
                 <div id="popupBox">
                 <div data-te-modal-init
                     className="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"

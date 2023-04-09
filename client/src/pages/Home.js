@@ -1,6 +1,6 @@
 import React from 'react';
-import NavTabs from '../components/NavBar';
-import Projects from './Projects';
+import FeaturedProjects from '../components/FeaturedProjects';
+import OtherProjects from '../components/OtherProjects';
 import Pic from "../images/self-pic.jpg";
 
 
@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <>
-      <NavTabs />
+    
       <div className="flex justify-center items-center">
         <div className="m-6 p-1 md:w-1/2 text-white rounded-3xl md:text-center sm:text-left introText">
           <div className="flex items-center justify-center">
@@ -29,8 +29,10 @@ export default function Home() {
           alt="Picture of Zeus"
         ></img>
       </div>
-      <Projects />
-
+      <div className="sm:flex sm:flex-col md:flex md:flex-row justify-center ">
+      <FeaturedProjects />
+      <OtherProjects />
+      </div>
     </>
   );
 };
