@@ -1,14 +1,16 @@
 import React from 'react';
 import FeaturedProjects from '../components/FeaturedProjects';
 import OtherProjects from '../components/OtherProjects';
-import Pic from "../images/self-pic.jpg";
+import ContactLinks from '../components/ContactLinks';
+import ResumeLink from '../components/ResumeLink';
+import Pic from "../assets/images/self-pic.jpg";
 
 
 export default function Home() {
 
   return (
     <>
-    
+
       <div className="flex justify-center items-center">
         <div className="m-6 p-1 md:w-1/2 text-white rounded-3xl md:text-center sm:text-left introText">
           <div className="flex items-center justify-center">
@@ -30,8 +32,13 @@ export default function Home() {
         ></img>
       </div>
       <div className="sm:flex sm:flex-col md:flex md:flex-row justify-center ">
-      <FeaturedProjects />
-      <OtherProjects />
+        <FeaturedProjects />
+        <OtherProjects />
+      </div>
+
+      <div className="sm:flex sm:flex-col sm:text-left md:flex md:flex-row md:text-center justify-evenly m-5 mt-20">
+        <ResumeLink />
+        <ContactLinks />
       </div>
     </>
   );
