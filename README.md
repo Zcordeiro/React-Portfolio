@@ -47,7 +47,7 @@ N/A
 
 ## Link to portfolio
 
-https://zeuscordeiro.com
+https://www.zeuscordeiro.com/
 
 ## Repo
 
