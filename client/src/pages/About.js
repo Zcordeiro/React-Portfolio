@@ -1,5 +1,7 @@
 import React from "react";
 import Pic from "../assets/images/self-pic.jpg";
+import ResumeLink from "../components/ResumeLink";
+import ContactLinks from "../components/ContactLinks";
 
 export default function About() {
   return (
@@ -27,6 +29,12 @@ export default function About() {
           alt="Picture of Zeus"
         ></img>
       </div>
+      
+      <div className="sm:flex sm:flex-col sm:text-left md:flex md:flex-row md:text-center justify-evenly m-5 mt-20">
+        <ResumeLink />
+        <ContactLinks />
+      </div>
+
     </>
   );
 }

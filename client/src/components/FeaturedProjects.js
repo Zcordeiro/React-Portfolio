@@ -1,8 +1,14 @@
 import React from "react";
 import AstroMusic from "../assets/images/screenshot-astromusic.png";
 import StudyTimer from "../assets/images/screenshot-timer.png";
+import { useQuery } from "@apollo/client";
+import { QUERY_PROJECTS } from "./utils/queries";
 
-export default function Projects() {
+export default function FeaturedProjects() {
+    const { loading, data } = useQuery(QUERY_PROJECTS);
+    const projects = data?.projects || [];
+
+
     return (
         <>
             <div className="mt-20 m-5 text-white">
@@ -11,6 +17,29 @@ export default function Projects() {
                     Featured
                     Projects</h1>
                 <div className="fprojectContainer text-center flex flex-wrap items-center justify-evenly">
+                    <div className="fprojectBoxes">
+                    {projects.map((project) => (
+                        <div key={project._id}>
+                            <img className="m-2 md:h-52 md:w-72 p-4" src={project.image}
+                                alt="screenshot of project"></img>
+                            <p className="fadeInBox">
+                                <button id="featuredProject1" data-te-toggle="modal"
+                                    data-te-target="#exampleModalCenteredScrollable" data-te-ripple-init
+                                    data-te-ripple-color="light" type="button"
+                                    className="fadeInBoxText blogText text-white bg-slate-900">
+                                    Learn More!
+                                </button>
+                            </p>
+                            <div className="text-white text-xl">
+                                <p>{project.title}
+                                    <br></br>
+                                    <a href={project.github} target="_blank">[Github
+                                        REPO]</a>
+                                </p>
+                            </div>
+                        </div>
+                    ))}
+                    </div>
 
                     <div className="fprojectBoxes" id="project1">
                         <img className="m-2 md:h-52 md:w-72 p-4" src={AstroMusic}

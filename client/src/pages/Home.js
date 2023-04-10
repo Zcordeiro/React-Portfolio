@@ -1,6 +1,5 @@
-import React from 'react';
-import FeaturedProjects from '../components/FeaturedProjects';
-import OtherProjects from '../components/OtherProjects';
+import React, {useState} from 'react';
+import AllProjects from '../components/AllProjects';
 import ContactLinks from '../components/ContactLinks';
 import ResumeLink from '../components/ResumeLink';
 import Pic from "../assets/images/self-pic.jpg";
@@ -31,9 +30,9 @@ export default function Home() {
           alt="Picture of Zeus"
         ></img>
       </div>
+
       <div className="sm:flex sm:flex-col md:flex md:flex-row justify-center ">
-        <FeaturedProjects />
-        <OtherProjects />
+        <AllProjects />
       </div>
 
       <div className="sm:flex sm:flex-col sm:text-left md:flex md:flex-row md:text-center justify-evenly m-5 mt-20">

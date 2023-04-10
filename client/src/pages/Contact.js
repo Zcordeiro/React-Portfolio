@@ -27,7 +27,7 @@ export default function Contact() {
                         </div>
                     </form>
                 </div>
-                <div className="contact-links-container mt-32">
+                <div className="mt-32">
                 <ContactLinks />
                 </div>
             </section>
