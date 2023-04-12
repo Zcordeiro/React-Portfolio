@@ -3,6 +3,7 @@ import DisplayPage from './pages/DisplayPage';
 import Stars from './components/Stars';
 import Footer from './components/Footer';
 import * as te from 'tw-elements';
+import FeaturedProjects from './components/FeaturedProjects';
 import './App.css';
 
 function App() {
