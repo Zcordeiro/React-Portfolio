@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function NavTabs({ currentPage, handlePageChange }) {
+function NavTabs() {
   return (
     <>
       <nav
@@ -10,41 +11,32 @@ function NavTabs({ currentPage, handlePageChange }) {
           Zeus Cordeiro's Portfolio
         </h1>
         <div className="text-2xl hidden space-x-8 md:flex">
-          <a
-            className={currentPage === 'Home' ? 'nav-link active m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl' : 'nav-link m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl'}
-            href="#home"
-            onClick={() => handlePageChange("Home")}
-          >
-            Home
-          </a>
-          <a
-            className={currentPage === 'About' ? 'nav-link active m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl' : 'nav-link m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl'}
-            href="#about"
-            onClick={() => handlePageChange("About")}
-          >
-            About Me
-          </a>
-          <a
-            className={currentPage === 'Blog' ? 'nav-link active m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl' : 'nav-link m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl'}
-            href="#blog"
-            onClick={() => handlePageChange("Blog")}
-          >
-            Blog
-          </a>
-          <a
-            className={currentPage === 'Projects' ? 'nav-link active m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl' : 'nav-link m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl'}
-            href="#projects"
-            onClick={() => handlePageChange("Projects")}
-          >
-            Projects
-          </a>
-          <a
-            className={currentPage === 'Contact' ? 'nav-link active m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl' : 'nav-link m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl'}
-            href="#contact"
-            onClick={() => handlePageChange("Contact")}
-          >
-            Contact
-          </a>
+          <Link to="/" className='nav-link m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl'>
+            <div>
+              Home
+            </div>
+          </Link>
+          <Link to="/about" className='nav-link m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl'>
+            <div>
+              About
+            </div>
+          </Link>
+          <Link to="/blog" className='nav-link m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl'>
+            <div>
+              Blog
+            </div>
+          </Link>
+
+          <Link to="/projects" className='nav-link m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl'>
+            <div>
+              Projects
+            </div>
+          </Link>
+          <Link to="/contact" className='nav-link m-2 p-1 hover:bg-slate-300 text-white hover:text-black rounded-3xl'>
+            <div>
+              Contact
+            </div>
+          </Link>
         </div>
 
       </nav>

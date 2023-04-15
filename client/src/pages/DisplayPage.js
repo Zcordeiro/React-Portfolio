@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import About from "./About";
 import Home from "./Home";
@@ -7,33 +8,19 @@ import Contact from "./Contact";
 import Blog from "./Blog";
 
 export default function DisplayPage() {
-    const [currentPage, setPageChange] = useState("Home");
-
-    const renderPage = () => {
-        if (currentPage === "Home") {
-            return <Home />;
-        } else if (currentPage === "About") {
-            return <About />;
-        } else if (currentPage === "Projects") {
-            return <Projects />;
-        } else if (currentPage === "Contact") {
-            return <Contact />;
-        } else if (currentPage === "Blog") {
-            return <Blog />;
-        }
-    };
-
-    const handlePageChange = (page) => setPageChange(page);
-
     return (
-        <>
-
-            {<NavBar currentPage={currentPage} handlePageChange={handlePageChange} />}
-            {renderPage()}
-
-        </>
+        <Router>
+            <NavBar />
+                <Routes>
+                    <Route exact path="/" Component={Home} />
+                    <Route exact path="/about" Component={About} />
+                    <Route exact path="/projects" Component={Projects} />
+                    <Route exact path="/contact" Component={Contact} />
+                    <Route exact path="/blog" Component={Blog} />
+                </Routes>
+        </Router>
     );
-
 }
+
 
 
