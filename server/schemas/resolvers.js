@@ -1,24 +1,39 @@
-const { Project, Blog } = require('../models');
+const { Project, projectResolvers, Blog, blogResolvers } = require('../models');
 
 const resolvers = {
     Query: {
         projects: async () => {
-            return await Project.find({});
+            return await projectResolvers.projects();
         },
-
+        singleProject: async (parent, { _id }) => {
+            return await projectResolvers.singleProject(parent, { _id });
+        },
         blogs: async () => {
-            return await Blog.find({});
+            return await blogResolvers.blogs();
+        },
+        singleBlog: async (parent, { _id }) => {
+            return await blogResolvers.singleBlog(parent, { _id });
         }
     },
 
     Mutation: {
         addProject: async (parent, args) => {
-            const project = await Project.create(args);
-            return project;
+            return await projectResolvers.addProject(parent, args);
+        },
+        updateProject: async (parent, args) => {
+            return await projectResolvers.updateProject(parent, args);
+        },
+        deleteProject: async (parent, args) => {
+            return await projectResolvers.deleteProject(parent, args);
         },
         addBlog: async (parent, args) => {
-            const blog = await Blog.create(args);
-            return blog;
+            return await blogResolvers.addBlog(parent, args);
+        },
+        updateBlog: async (parent, args) => {
+            return await blogResolvers.updateBlog(parent, args);
+        },
+        deleteBlog: async (parent, args) => {
+            return await blogResolvers.deleteBlog(parent, args);
         }
     }
 };

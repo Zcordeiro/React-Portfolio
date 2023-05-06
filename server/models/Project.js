@@ -29,4 +29,39 @@ const projectSchema = new Schema({
 
 const Project = model('Project', projectSchema);
 
-module.exports = Project;
+const projectResolvers = {
+    projects: async () => {
+        return await Project.find({});
+    },
+    singleProject: async (parent, { _id }) => {
+        return await Project.findById(_id);
+    },
+    addProject: async (parent, args) => {
+        const project = await Project.create(args);
+        return project;
+    },
+    updateProject: async (parent, args) => {
+        const project = await Project.findByIdAndUpdate(
+            { _id: args._id },
+            {   title: args.title,
+                description: args.description,
+                image: args.image,
+                github: args.github,
+                deployed: args.deployed,
+                technologies: args.technologies
+            },
+            { new: true }
+        );
+        return project;
+    },
+    deleteProject: async (parent, args) => {
+        const project = await Project.findByIdAndDelete(
+            { _id: args._id }
+        );
+        return project;
+    },
+};
+
+
+module.exports = {Project, projectResolvers};
+

@@ -1,4 +1,4 @@
-const Project = require('./Project');
-const Blog = require('./Blog');
+const {Project, projectResolvers} = require('./Project');
+const {Blog, blogResolvers} = require('./Blog');
 
-module.exports = { Project, Blog };
+module.exports = { Project, projectResolvers, Blog, blogResolvers };

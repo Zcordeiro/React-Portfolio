@@ -1,15 +1,26 @@
 import React from "react";
 import FeaturedProject from "../components/FeaturedProjects";
 import AllProjects from "../components/AllProjects";
+import { useQuery } from "@apollo/client";
+import { QUERY_PROJECTS } from "../utils/queries";
+
 
 
 export default function Projects() {
+    const { loading, data } = useQuery(QUERY_PROJECTS);
+    const projects = data?.projects || [];
+
+
     return (
         <>
 
             <section class="sm:flex sm:flex-col md:flex md:flex-row justify-center ">
-                <AllProjects />
-                {/* This will be replaced with projects from Database once set up*/}          
+                <FeaturedProject projects={projects} />
+            </section>
+
+
+            <section class="sm:flex sm:flex-col md:flex md:flex-row justify-center ">
+                <AllProjects />         
             </section>
         </>
     );
