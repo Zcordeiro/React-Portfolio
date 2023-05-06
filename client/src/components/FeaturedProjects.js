@@ -4,7 +4,7 @@ import { useQuery } from "@apollo/client";
 
 
 
-export default function FeaturedProjects({ projects }) {
+export default function FeaturedProjects( {projects} ) {
     const [projectsVisible, setProjectsVisible] = useState(true);
 
     const toggleProjectsWindow = () => {

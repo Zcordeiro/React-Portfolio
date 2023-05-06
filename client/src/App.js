@@ -19,8 +19,7 @@ function App() {
     <>
   <ApolloProvider client={client}>
       <div className="body">
-        {/* <DisplayPage /> */}
-        <Projects />
+        <DisplayPage />
         <Stars />
         <Footer />
       </div>
