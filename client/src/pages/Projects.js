@@ -9,20 +9,20 @@ import { QUERY_PROJECTS } from "../utils/queries";
 export default function Projects() {
     const { loading, data } = useQuery(QUERY_PROJECTS);
     const projects = data?.projects || [];
-
+    console.log(projects);
     if (loading) {
         return <div>Loading...</div>;
     }
 
     return (
         <>
-{/* 
-            <section class="sm:flex sm:flex-col md:flex md:flex-row justify-center ">
+
+            <section className="sm:flex sm:flex-col md:flex md:flex-row justify-center ">
                 <FeaturedProject projects={projects} />
-            </section> */}
+            </section>
 
 
-            <section class="sm:flex sm:flex-col md:flex md:flex-row justify-center ">
+            <section className="sm:flex sm:flex-col md:flex md:flex-row justify-center ">
                 <AllProjects />         
             </section>
         </>

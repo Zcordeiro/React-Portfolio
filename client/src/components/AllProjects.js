@@ -48,7 +48,7 @@ export default function AllProjects() {
                     <div id="popup1">
                         <div data-te-modal-init
                             className="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-                            id="popupBox1" tabindex="-1" aria-labelledby="popupBox1"
+                            id="popupBox1" tabIndex="-1" aria-labelledby="popupBox1"
                             aria-modal="true" role="dialog">
                             <div data-te-modal-dialog-ref
                                 className="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
@@ -124,7 +124,7 @@ export default function AllProjects() {
                     <div id="popup2">
                         <div data-te-modal-init
                             className="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-                            id="popupBox2" tabindex="-1" aria-labelledby="popupBox2"
+                            id="popupBox2" tabIndex="-1" aria-labelledby="popupBox2"
                             aria-modal="true" role="dialog">
                             <div data-te-modal-dialog-ref
                                 className="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
@@ -199,7 +199,7 @@ export default function AllProjects() {
                     <div id="popup3">
                         <div data-te-modal-init
                             className="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-                            id="popupBox3" tabindex="-1" aria-labelledby="popupBox3"
+                            id="popupBox3" tabIndex="-1" aria-labelledby="popupBox3"
                             aria-modal="true" role="dialog">
                             <div data-te-modal-dialog-ref
                                 className="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
@@ -274,7 +274,7 @@ export default function AllProjects() {
                     <div id="popup4">
                         <div data-te-modal-init
                             className="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-                            id="popupBox4" tabindex="-1" aria-labelledby="popupBox4"
+                            id="popupBox4" tabIndex="-1" aria-labelledby="popupBox4"
                             aria-modal="true" role="dialog">
                             <div data-te-modal-dialog-ref
                                 className="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
@@ -349,7 +349,7 @@ export default function AllProjects() {
                     <div id="popup5">
                         <div data-te-modal-init
                             className="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-                            id="popupBox5" tabindex="-1" aria-labelledby="popupBox5"
+                            id="popupBox5" tabIndex="-1" aria-labelledby="popupBox5"
                             aria-modal="true" role="dialog">
                             <div data-te-modal-dialog-ref
                                 className="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
@@ -424,7 +424,7 @@ export default function AllProjects() {
                     <div id="popup6">
                         <div data-te-modal-init
                             className="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-                            id="popupBox6" tabindex="-1" aria-labelledby="popupBox6"
+                            id="popupBox6" tabIndex="-1" aria-labelledby="popupBox6"
                             aria-modal="true" role="dialog">
                             <div data-te-modal-dialog-ref
                                 className="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
@@ -480,7 +480,7 @@ export default function AllProjects() {
                     <div id="popupBox">
                         <div data-te-modal-init
                             className="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-                            id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollable"
+                            id="exampleModalCenteredScrollable" tabIndex="-1" aria-labelledby="exampleModalCenteredScrollable"
                             aria-modal="true" role="dialog">
                             <div data-te-modal-dialog-ref
                                 className="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
