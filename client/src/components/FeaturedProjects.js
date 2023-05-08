@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import ProjectModal from "./ProjectModal";
-import { AstroMusic } from '../utils/projectImages';
+
 
 
 export default function FeaturedProjects({ projects }) {
@@ -10,6 +10,8 @@ export default function FeaturedProjects({ projects }) {
     const toggleProjectsWindow = () => {
         setProjectsVisible(!projectsVisible);
     }
+
+    // create a function to collect the project image from the utils folder and display's it in the correct project box by matching it to the project title.
 
     if (!projects) {
         return <h3>No Current Projects</h3>
@@ -28,7 +30,7 @@ export default function FeaturedProjects({ projects }) {
                     {projects &&
                         projects.map((project, index) => (
                             <div key={index} className="projectBoxes">
-                                <img src={project.image} className="m-2 md:h-52 md:w-72 p-4"
+                                <img src={`../assets/images/${project.image}`} className="m-2 md:h-52 md:w-72 p-4"
                                     alt="screenshot of project"></img>
                                 <p className="fadeInBox">
                                     <button id={index} data-te-toggle="modal"

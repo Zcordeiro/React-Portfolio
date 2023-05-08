@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY_SINGLE_PROJECT } from '../utils/queries';
-import { AstroMusic } from '../utils/projectImages';
+
 
 
 export default function ProjectModal({projectId, index}) {
@@ -43,10 +43,10 @@ export default function ProjectModal({projectId, index}) {
                                 </button>
                             </div>
                             <div className="relative p-4">
-                                <img id="projectImage" src={singleProject.image} alt="image of project"></img>
+                                <img id="projectImage" src={`../assets/images/${singleProject.image}`} alt="image of project"></img>
                                 <p id="projectDescription" className="text-cyan-50">{singleProject.description} </p>
                                 <br></br> <br></br>
-                                <p className="text-xl font-semibold text-blue-300 underline hover:italic">Technologies Used:
+                                <p className="text-xl font-semibold text-blue-300 underline">Technologies Used:
                                 </p>
                                 {singleProject.technologies.map((tech, index) => (
                                     <p key={index} className="text-med italic text-blue-300 m-2">{tech}</p>
