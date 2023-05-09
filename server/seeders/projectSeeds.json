@@ -1,0 +1,50 @@
+[
+    {
+        "title": "AstroMusic",
+        "description": "AstroMusic a way to help connect you to your daily horoscope and discover some new music using your astrological sign! We've carefully currated a playlist based off of your mood and have discovered your lucky hour and number for the day",
+        "image": "../images/screenshot-astromusic.png",
+        "github": "https://github.com/Astro-Div/Astro-Music",
+        "deployed": "https://astro-div.github.io/Astro-Music/",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Tailwind CSS",
+            "JQuery",
+            "Aztro API",
+            "Spotify API"
+        ]
+    },
+    {
+        "title": "Knowledge Hub",
+        "description": "A learning management system that provides a centralized platform for educators to create course materials",
+        "image": "../images/screenshot-knowledgehub.png",
+        "github": "https://github.com/TheMernMachine/Knowledge-Hub",
+        "deployed": "https://shielded-thicket-93184.herokuapp.com/",
+        "technologies": [
+          "MongoDB",
+          "Express",
+          "React",
+          "Node.js",
+          "GraphQL",
+          "Apollo",
+          "JsonWebToken",
+          "Mongoose",
+          "Quilljs"
+        ]
+    },
+    {
+        "title": "Study Timer",
+        "description": "This is a pomodoro style timer made to help the user focus while studying and working. Users can also adjust the times and backgrounds to better suite their needs.",
+        "image": "../images/screenshot-studytimer.png",
+        "github": "https://github.com/Zcordeiro/Study-Timer",
+        "deployed": "https://study-timer-psi.vercel.app/",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Tailwind CSS",
+            "Express"
+        ]
+    }
+]
